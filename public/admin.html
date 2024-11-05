@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div>
+      <img id="image" src="" alt="" />
+    </div>
+
+    <input id="imgpicker" type="file" name="" id="" />
+    <input id="propertyname" placeholder="name of property" type="text" />
+    <input id="price" placeholder="price" type="text" />
+    <input id="propertytype" placeholder="property type" type="text" />
+    <div style="display: grid; grid-template-columns: 200px 300px" class="grid">
+      <div><span>Bedroom</span></div>
+      <div><input id="bedroomqty" placeholder="quantity" type="text" /></div>
+      <div><span>Bathroom</span></div>
+      <div><input id="bathroomqty" placeholder="quantity" type="text" /></div>
+      <div><span>Location</span></div>
+      <div><input id="location" placeholder="location" type="text" /></div>
+      <div><span>Parking Space</span></div>
+      <div>
+        <label for="yes">Yes</label>
+        <input type="radio" name="decision" id="yes" />
+        <label for="no">No</label>
+        <input type="radio" name="decision" id="no" />
+      </div>
+    </div>
+    <button id="uploadbtn">Upload</button>
+  </body>
+</html>
+<script type="module" src="admin.js"></script>
