@@ -1,0 +1,226 @@
+h1,
+h2 {
+  font-family: Merriweather Sans;
+}
+
+.body-wrapper,
+main,
+.signupform,
+.signuppage {
+  height: 100%;
+}
+
+main {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.signuppage {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  width: 90%;
+}
+
+.signupform {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.field-wrapper {
+  align-items: center;
+  border: 1px solid #999;
+  border-radius: 18px;
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+  position: relative;
+  width: 100%;
+}
+.field-wrapper img {
+  height: 24px;
+}
+
+.errortag {
+  color: red;
+  font-size: 12px;
+  left: 10px;
+  position: absolute;
+  top: 100%;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+dialog {
+  width: 400px;
+  height: 300px; /* Increase the height */
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  justify-content: center; /* Center the form vertically */
+  align-items: center; /* Center the form horizontally */
+  position: relative;
+  text-align: center;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4); /* Optional: Adds a background blur */
+}
+
+/* Center the dialog on the screen */
+dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the form */
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column; /* Stack input and button vertically */
+  gap: 15px;
+  height: 100%;
+  justify-content: center; /* Center the form vertically */
+  width: 100%;
+}
+
+form input,
+form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#forgotbtn {
+  background-color: #fb8d28;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#forgotbtn:hover {
+  background-color: #ef7707;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  fill: #f00;
+}
+
+.forgot-btn {
+  border: none;
+  background-color: transparent;
+  color: #fb8d28;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+}
+
+.field-wrapper input {
+  border: none;
+  font-size: 16px;
+  height: 100%;
+  outline: none;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.namefields {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#submit {
+  background: #fb8d28;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+#submit:hover {
+  background: #ef7707;
+}
+
+.suo-divider {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.empty {
+  border-bottom: 1px solid #555;
+  height: 5px;
+  width: 100%;
+}
+
+.continue {
+  align-items: center;
+  background: none;
+  border: 1px solid #777;
+  border-radius: 30px;
+  color: #555;
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.continue-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-rd {
+  display: flex;
+  gap: 10px;
+}
+
+.login-rd a {
+  color: #fb8d28;
+  text-decoration: none;
+}
+
+.login-rd a:hover {
+  color: #ef7707;
+}
+
+@media (min-width: 700px) {
+  main {
+    margin: auto;
+    width: 60%;
+  }
+
+  .continue-wrapper {
+    flex-direction: row;
+  }
+
+  .custom-content {
+    color: #33c1ff; /* Change this to your desired text color */
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="forrent.css" />
+    <link rel="icon" href="trustee prime favicon.ico" type="favicon" />
+    <script
+      src="https://kit.fontawesome.com/4ab9455e93.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div id="favorite">
+        <div>
+          <i class="fa-solid fa-heart"></i>
+          <a href="">Favorite Properties</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code-compare"></i>
+          <a href="">Compare Properties</a>
+        </div>
+      </div>
+      <nav>
+        <div class="header">
+          <div class="mainn">
+            <div class="logodiv">
+              <img src="../trustee prime logo.jpg" alt="" />
+              <div class="prime-logoword">
+                <div class="briefword">Estate Surveyors & Valuers</div>
+              </div>
+            </div>
+            <div>
+              <div id="phone-iconn">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+            </div>
+            <div id="call-days">
+              <div id="numberssss">(08025153814)</div>
+              <div id="callussss">Call Us Monday To Friday</div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom-nav">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <a href="">Featured properties</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-window-maximize"></i>
+            <a href="">Explore More Properties</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-address-card"></i>
+            <a href="">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </main>
+    <section class="secone">
+      <div>
+        <div class="fliter-search">Property Fliter Search</div>
+        <div id="searchDiv">
+          <form>
+            <div id="form-search">
+              <select id="type" name="type">
+                <option value="">Type</option>
+                <option value="apartment">Apartment</option>
+                <option value="Residential">Residential</option>
+                <option value="land">Land</option>
+                <option value="commercial">Commercial</option>
+              </select>
+              <select id="saleType" name="sale">
+                <option value="">Sale Type</option>
+                <option value="Sale">Sale</option>
+                <option value="Letting">Letting</option>
+                <option value="for-rent">Valuation</option>
+                <option value="for-rent">Contract</option>
+              </select>
+
+              <select id="location" name="location">
+                <option value="">Select Location</option>
+              </select>
+              <div class="container-input">
+                <div class="input-group">
+                  <div class="number-input">
+                    <button type="button" onclick="changeValue('beds', -1)">
+                      -
+                    </button>
+                    <input
+                      id="beds"
+                      type="number"
+                      min="-1"
+                      step="1"
+                      placeholder="Beds"
+                      type="text"
+                    />
+                    <button type="button" onclick="changeValue('beds', 1)">
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div class="number-input">
+                    <button onclick="changeValue('Baths', -1)">-</button>
+                    <input
+                      id="baths"
+                      type="number"
+                      min="-1"
+                      step="1"
+                      placeholder="Baths"
+                      type="text"
+                    />
+                    <button onclick="changeValue('baths', 1)">+</button>
+                  </div>
+                </div>
+              </div>
+              <div id="propertyId">
+                <input type="text" id="idInput" placeholder="Property ID" />
+              </div>
+              <button id="searchBtn" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <section class="sectwo">
+        <div id="properties" class="properties"></div>
+        <div id="loading-spinner" class="spinner" style="display: none"></div>
+      </section>
+    </section>
+  </body>
+  <div>
+    <div id="botoomDiv">
+      <div class="logondtime">
+        <div class="botoomlogoname">Trustee Prime @ 2024</div>
+        <div id="dateTimeDisplay"></div>
+      </div>
+    </div>
+  </div>
+</html>
+<script type="module" src="forrent.js"></script>

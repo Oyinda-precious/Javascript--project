@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Over+the+Rainbow&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+/* main {
+  height: 100vh;
+} */
+nav {
+  width: 100%;
+  position: sticky;
+  height: 150px;
+  z-index: 3;
+  top: 0;
+  background-color: white;
+}
+
+.mainn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logodiv img {
+  height: 90px;
+  width: 90%;
+  padding: 10px 0px 10px 30px;
+}
+.prime-logoword {
+  padding: 10px 0px 10px 30px;
+  font-family: sans-serif;
+  margin: -10px 0px 0px 0px;
+}
+.smallword {
+  font-size: 18px;
+  font-weight: bold;
+}
+.briefword {
+  font-size: 10px;
+  font-weight: bolder;
+  opacity: 0.6;
+  margin-top: -10px;
+}
+#phone-iconn {
+  margin-left: 50rem;
+  /* margin-top: 5rem; */
+  font-size: 40px;
+  padding: 10px;
+  opacity: 0.5;
+}
+#call-days {
+  /* margin-top: 1rem; */
+  padding: 10px;
+}
+#numberssss {
+  color: blue;
+}
+
+#callussss {
+  opacity: 0.6;
+  margin: 5px;
+  font-family: monospace;
+}
+.secone {
+  background-color: rgb(196, 212, 224);
+  width: 100%;
+  height: 100vh;
+}
+.whole-form {
+  padding: 20px 30px;
+  margin-left: 30px;
+}
+/* #signup-container {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+} */
+
+#form-title {
+  text-align: center;
+  color: darkblue;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form-group-1,
+#form-group-2,
+#form-group-3 {
+  display: flex;
+  gap: 20px;
+}
+
+#email-group,
+#mobile-group,
+#first-name-group,
+#last-name-group,
+#account-type-group,
+#address-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  color: darkblue;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Terms and Conditions */
+
+#terms-section #terms-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 25px;
+  color: darkblue;
+}
+
+#terms-label {
+  display: flex;
+  justify-content: center;
+}
+#terms-label a {
+  text-decoration: none;
+  color: darkblue;
+}
+#terms-label a:hover {
+  text-decoration: underline;
+}
+#terms {
+  margin-right: 8px;
+}
+
+/* Submit Button */
+#submit-btn-container {
+  text-align: center;
+}
+
+#submit-btn {
+  background-color: darkblue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: blue;
+}
+#login-sub {
+  text-align: center;
+  color: darkblue;
+}

@@ -1,107 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Over+the+Rainbow&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Jost", sans-serif;
-  background: linear-gradient(to bottom, #ae60df, #501f6f, #6e3a8f);
-}
-.main {
-  width: 350px;
-  height: 550px;
-  background: red;
-  /* overflow: hidden; */
-  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
-    no-repeat center/ cover;
-  border-radius: 10px;
-  box-shadow: 5px 20px 50px #000;
-}
-#displaydiv {
-  display: flex;
-  font-size: 10px;
-  cursor: pointer;
-}
-#chk {
-  display: none;
-}
-#signup {
-  position: relative;
+  font-family: Arial, sans-serif;
   width: 100%;
-  height: 100%;
-}
-#checkk {
-  color: #fff;
-  font-size: 2.3em;
-  justify-content: center;
-  display: flex;
-  margin: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-#checkk a {
-  text-decoration: none;
-  color: white;
-}
-input {
-  width: 60%;
-  height: 10px;
-  background: #e0dede;
-  justify-content: center;
-  display: flex;
-  margin: 20px auto;
-  padding: 12px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-button {
-  width: 60%;
-  height: 40px;
-  margin: 10px auto;
-  justify-content: center;
-  display: block;
-  color: #fff;
-  background: #501f6f;
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 30px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-button:hover {
-  background: #6d44b8;
-}
-.login {
-  width: 300px;
-  height: 460px;
-  margin: 30px 0px 0px 0px;
-  background: #eee;
-  border-radius: 60% / 10%;
-  color: #573b8a;
-}
-#theform {
-  margin-top: 90px;
+  height: 100vh;
 }
 
-#thehr {
-  width: 200px;
+nav {
+  width: 100%;
+  position: sticky;
+  height: 150px;
+  z-index: 3;
+  top: 0;
+  background-color: white;
+}
+
+.mainn {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
-  margin: auto;
+  cursor: pointer;
+}
+
+.logodiv img {
+  height: 90px;
+  width: 90%;
+  padding: 10px 0px 10px 30px;
+}
+.prime-logoword {
+  padding: 10px 0px 10px 30px;
+  font-family: sans-serif;
+  margin: -10px 0px 0px 0px;
+}
+.smallword {
+  font-size: 18px;
+  font-weight: bold;
+}
+.briefword {
+  font-size: 10px;
+  font-weight: bolder;
+  opacity: 0.6;
+  margin-top: -10px;
+}
+#phone-iconn {
+  margin-left: 50rem;
+  /* margin-top: 5rem; */
+  font-size: 40px;
+  padding: 10px;
+  opacity: 0.5;
+}
+#call-days {
+  /* margin-top: 1rem; */
+  padding: 10px;
+}
+#numberssss {
+  color: blue;
+}
+
+#callussss {
+  opacity: 0.6;
+  margin: 5px;
+  font-family: monospace;
+}
+.secone {
+  background-color: rgb(196, 212, 224);
+  width: 100%;
+  height: 100vh;
+}
+.whole-form {
+  padding: 20px 30px;
+  margin-left: 30px;
+}
+
+#form-title {
+  text-align: center;
+  color: darkblue;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form-group-1,
+#form-group-2,
+#form-group-3 {
+  display: flex;
+  gap: 20px;
+}
+
+#input-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Terms and Conditions */
+
+#terms-section #terms-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 25px;
+  color: darkblue;
+}
+
+#terms-label {
+  display: flex;
+  justify-content: center;
+}
+#terms-label a {
+  text-decoration: none;
+  color: darkblue;
+}
+#terms-label a:hover {
+  text-decoration: underline;
+}
+#terms {
+  margin-right: 8px;
+}
+
+/* Submit Button */
+#submit-btn-container {
+  text-align: center;
+}
+
+#submitBtn {
+  background-color: darkblue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: blue;
+}
+#login-sub {
+  text-align: center;
+  color: darkblue;
+  font-weight: 500;
+}
+#login-sub a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.last-div {
+  margin-top: -2rem;
 }
 #ordiv {
   text-align: center;
-  color: whitesmoke;
-  font-size: 20px;
-  margin: 10px 0px 0px 0px;
+  color: darkblue;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 30px 0px 0px 0px;
 }
+.continue-google {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.continue-google button {
+  padding: 9px;
+}
+#googleBtn {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  width: 25%;
+  opacity: 0.8;
+  border: 0 black;
+}
+#googleBtn img {
+  width: 25px;
+}
+
+.passwordd {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  right: 19rem; /* Align to the right inside the input */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-password img {
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    height: auto;
+    padding: 10px 0;
+    display: none;
+  }
+  .secone {
+    height: fit-content;
+    width: fit-content;
+  }
+  .mainn {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logodiv img {
+    width: 60%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .whole-form {
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  #form-title {
+    font-size: 20px;
+  }
+
+  #signup-form {
+    gap: 15px;
+  }
+
+  #form-group-1,
+  #form-group-2,
+  #form-group-3 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #submitBtn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #terms-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  #googleBtn {
+    width: 80%;
+  }
+
+  .continue-google {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .toggle-password {
+    right: 10px;
+  }
+
+  .last-div {
+    margin-top: 1rem;
+  }
+
+  #phone-iconn {
+    margin-left: 0;
+    font-size: 30px;
+  }
+
+  #call-days,
+  #callussss {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+  .secone {
+    height: fit-content;
+    width: fit-content;
+   
+  }
+  #form-title {
+    font-size: 16px;
+    text-align: center;
+    margin-right: 20rem;
+  }
+  .toggle-password,
+  .toggle-password img {
+    display: none;
+  }
+  #signup-form {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #form-group-1,
+  #form-group-2,
+  #form-group-3 {
+    display: block;
+  }
+  #terms-section,
+  #submit-btn-container,
+  #login-sub,
+  #ordiv {
+    margin-right: 20rem;
+    font-size: 10px;
+  }
+  .continue-google {
+    margin-right: 20rem;
+    font-size: 12px;
+    padding: 10px;
+  }
+  #terms-section {
+    margin-bottom: 8rem;
+  }
+  #terms-text {
+    margin-bottom: 8rem;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  #terms-label {
+    width: fit-content;
+  }
+  .submit-total {
+    margin-bottom: 80px;
+  }
+  #login-sub {
+    margin-top: 20px;
+  }
+  #googleBtn {
+    width: 250px;
+  }
+} */

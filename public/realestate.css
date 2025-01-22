@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   height: 100vh;
@@ -15,9 +16,7 @@ nav {
   top: 0;
   background-color: white;
 }
-.header {
-  border-bottom: 1px solid rgba(192, 191, 191, 0.726);
-}
+
 .mainn {
   display: flex;
   justify-content: space-between;
@@ -26,14 +25,17 @@ nav {
 }
 
 .logodiv img {
-  height: 40px;
-  width: 80px;
-  padding: 10px 0px 10px 30px;
+  height: 80px;
+  width: auto;
+  padding: 10px 0px 10px 20px;
+  /* margin-top: -1rem; */
 }
 .prime-logoword {
-  padding: 10px 0px 10px 30px;
+  padding: 10px 0px 10px 20px;
+  font-size: 16px;
   font-family: sans-serif;
-  margin: -10px 0px 0px 0px;
+  margin-top: -1rem;
+  /* margin: -10px 0px 0px 0px; */
 }
 .smallword {
   font-size: 18px;
@@ -41,29 +43,70 @@ nav {
 }
 .briefword {
   font-size: 10px;
-  font-weight: bold;
-  opacity: 0.5;
+  font-weight: bolder;
+  opacity: 0.6;
+  margin-top: -10px;
 }
 .services {
   display: flex;
-  gap: 20px;
-  margin: 10px 0px 0px 10px;
-  padding: 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  padding: 15px;
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
 .services a {
   text-decoration: none;
   color: black;
+  padding: 10px;
 }
 .services a:hover {
   border: 1px solid darkblue;
   border-radius: 10px;
-  padding: 15px;
+  /* padding: 15px; */
   background-color: darkblue;
   color: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  color: black;
+  min-width: 140px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin-left: -15px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: darkblue;
+  color: white;
+  height: fit-content;
+  border: 0;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 .sec1 {
   background-image: url(../residential\ building.jpg);
@@ -91,10 +134,10 @@ nav {
 }
 .explore-more button {
   margin: 40px 0px 0px 0px;
-  border: 1px solid darkblue;
+  border: 1px solid orange;
   border-radius: 7px;
   padding: 10px;
-  background-color: darkblue;
+  background-color: orange;
   font-size: 15px;
   font-family: sans-serif;
   font-weight: 500;
@@ -103,7 +146,8 @@ nav {
   color: white;
 }
 .explore-more button:hover {
-  background-color: rgb(88, 88, 198);
+  background-color: rgb(147, 100, 13);
+  border: 1px solid rgb(147, 100, 13);
 }
 .dream-home {
   color: white;
@@ -132,9 +176,7 @@ nav {
 }
 .find-listdiv a:hover {
   background-color: transparent;
-  /* transform: scale(1.1); */
   transition: all 0.3s ease-in-out;
-  /* transition: background-color 0.3s ease; */
   border: 1px solid white;
 }
 .sec2 {
@@ -145,11 +187,6 @@ nav {
   height: 400px;
   box-sizing: border-box;
   margin: 70px 0px 0px 0px;
-}
-
-.properties {
-  display: flex;
-  gap: 20px;
 }
 
 .secondsec {
@@ -223,11 +260,14 @@ nav {
   height: 500px;
   box-sizing: border-box;
   /* background-color: blueviolet; */
-  /* margin: 50px 0px 0px 0px; */
 }
 .dynamic-content {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-wrap: wrap; /* Wraps content on smaller screens */
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 .imgcontent {
   margin: -40px 0px 0px 90px;
@@ -271,7 +311,11 @@ nav {
 }
 .dynamic-content2 {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-wrap: wrap; /* Wraps content on smaller screens */
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 .both {
   padding: 0px;
@@ -366,13 +410,21 @@ nav {
 }
 .sec6 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  margin-top: -10rem;
+  padding: 70px;
+}
+
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  row-gap: 100px;
 }
 .box-div {
-  margin: -10rem 0px 0px 7rem;
   padding: 20px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  width: 350px;
+  width: 340px;
   height: 700px;
 }
 .box-div img {
@@ -398,7 +450,6 @@ nav {
   gap: 25px;
   padding: 10px;
   opacity: 0.6;
-  margin: 20px 0px 0px 0px;
 }
 .Oluyole {
   font-size: 15px;
@@ -447,8 +498,8 @@ nav {
 .last-box {
   border: 1px solid;
   width: 300px;
-  height: 70px;
-  margin: 40px 0px 0px 0px;
+  height: 60px;
+  margin: 30px 0px 0px 0px;
   background-color: darkblue;
 }
 .residence {
@@ -462,4 +513,143 @@ nav {
 }
 .manage {
   width: 80px;
+}
+.sec7 {
+  background-image: url(../african-female-real-estate-agent-.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  box-sizing: border-box;
+  margin: 70px 0px 0px 0px;
+  position: relative;
+}
+.sec7::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 1, 1, 0.5);
+  z-index: 1;
+}
+.aboutcompany {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering the text */
+  color: #fff; /* Light text color */
+  text-align: center; /* Center text alignment */
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.estatehistory {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 25px;
+  width: 600px;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 20px;
+}
+.ratenumber {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sec8 {
+  background-color: black;
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  margin: 70px 0px 0px 0px;
+}
+.footerdiv {
+  display: flex;
+  color: white;
+  padding: 10px;
+  justify-content: space-around;
+  /* margin-left: -5rem; */
+}
+.footersentence {
+  margin-top: 3rem;
+}
+.footertext {
+  font-size: 30px;
+  font-weight: bold;
+}
+.thepolicy {
+  margin: 10px 0 0 10px;
+}
+.thepolicy a {
+  text-decoration: none;
+  color: white;
+}
+.thepolicy a:hover {
+  color: blue;
+}
+li {
+  list-style: none;
+}
+
+/* media query */
+@media screen and (max-width: 800px) {
+  .smallword {
+    font-size: 10px;
+  }
+  .briefword {
+    display: none;
+  }
+  .services {
+    font-size: 5px;
+    flex-direction: row;
+    gap: 5px;
+    display: flex;
+  }
+  .service-question h2,
+  .dream-home,
+  .Determinediv,
+  .seconddiv,
+  .onesentence h1 {
+    font-size: 20px;
+  }
+  .find-listdiv {
+    display: flex;
+    font-size: 10px;
+  }
+  .find-listdiv a,
+  .bookings a {
+    padding: 5px;
+  }
+  .smallbox {
+    display: none;
+  }
+  .dynamic-content2 {
+    display: none;
+  }
+  .smallbox2 {
+    display: none;
+  }
+  .properties {
+    display: flex;
+    align-items: center;
+  }
+  .estatehistory {
+    font-size: 10px;
+  }
+  .rating {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .ratenumber {
+    font-size: 20px;
+  }
+  .footerdiv,
+  .sec8 {
+    display: none;
+  }
 }

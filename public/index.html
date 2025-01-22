@@ -16,108 +16,152 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="Realestate.css" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="icon" href="trustee prime favicon.ico" type="favicon" />
+    <script
+      src="https://kit.fontawesome.com/4ab9455e93.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="main">
-      <div id="signup">
-        <div id="signUpForm">
-          <div id="displaydiv">
-            <div id="checkk">Sign up</div>
-            <div id="checkk"><a href="Login.html">Login</a></div>
+    <main>
+      <nav>
+        <div class="mainn">
+          <div class="logodiv">
+            <img src="../trustee prime logo.jpg" alt="" />
+            <div class="prime-logoword">
+              <div class="briefword">Estate Surveyors & Valuers</div>
+            </div>
           </div>
-
-          <input
-            id="userName"
-            type="text"
-            name="txt"
-            placeholder="Username"
-            required=""
-          />
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Email"
-            required=""
-          />
-          <input
-            id="passWord"
-            type="text"
-            name="pswd"
-            placeholder="Password"
-            required=""
-          />
-          <button id="signmeup">Sign up</button>
-          <!-- <button>Logout</button> -->
-        </div>
-        <div>
-          <div id="thehr">
-            <hr />
+          <div>
+            <div id="phone-iconn">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
           </div>
-
-          <div id="ordiv">Or</div>
+          <div id="call-days">
+            <div id="numberssss">(08025153814)</div>
+            <div id="callussss">Call Us Monday To Friday</div>
+          </div>
         </div>
-        <button id="signGoogle" onclick="signGoogle()">
-          Continue with Google
-        </button>
-        <p id="showname"></p>
-      </div>
-    </div>
+      </nav>
+      <section class="secone">
+        <div class="whole-form">
+          <h1 id="form-title">Create An Account</h1>
+          <form id="signup-form">
+            <div id="form-group-1">
+              <div id="input-field">
+                <!-- <label for="name">NAME</label> -->
+                <!-- <i class="fa-regular fa-user"></i> -->
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+                <!-- <span class="errortag" id="err"></span> -->
+              </div>
+              <div id="input-field">
+                <!-- <label for="email">EMAIL</label> -->
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  autocomplete="username"
+                  required
+                />
+              </div>
+            </div>
+            <div id="form-group-2">
+              <div id="input-field" class="passwordd">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  autocomplete="new-password"
+                  required
+                />
+                <span class="toggle-password">
+                  <img
+                    id="passeye"
+                    src="../icons8-hide-password-24.png"
+                    alt=""
+                  />
+                </span>
+              </div>
+              <span class="errortag" id="err"></span>
+              <div id="input-field">
+                <input
+                  type="password"
+                  id="confirm-Password"
+                  name="confirm-Password"
+                  placeholder="Confirm-Password"
+                  autocomplete="new-password"
+                  required
+                />
+                <span class="toggle-password">
+                  <img
+                    id="passeye"
+                    src="../icons8-hide-password-24.png"
+                    alt=""
+                  />
+                </span>
+              </div>
+              <span class="errortag" id="err"></span>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div id="terms-section">
+              <p id="terms-text">
+                <strong>Terms and Conditions</strong><br />
+                Please read these terms and conditions carefully before
+                registering for our service.
+              </p>
+              <label id="terms-label">
+                <div id="checkkk">
+                  <input type="checkbox" id="terms" name="terms" required />
+                </div>
+                I AGREE TO THESE : <a href="">TERMS AND CONDITIONS</a>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-total">
+              <div id="submit-btn-container">
+                <button type="submit" id="submitBtn">Sign Up</button>
+              </div>
+              <div>
+                <div id="login-sub">
+                  Already have an account? <a href="Login.html">Login</a>
+                </div>
+              </div>
+              <div class="last-div">
+                <div id="ordiv">Or</div>
+                <div class="continue-google">
+                  <button type="submit" id="googleBtn">
+                    <img src="../Google icon.png" alt="" />
+                    Continue with Google
+                  </button>
+                  <button type="submit" id="googleBtn">
+                    <img src="../facebook icon.png" alt="" />
+                    Continue with Facebook
+                  </button>
+                </div>
+              </div>
+
+              <p id="showname"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
-  import {
-    getAuth,
-    GoogleAuthProvider,
-    signInWithPopup,
-    sendEmailVerification,
-  } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBLjHFnJ71ZHuSOzkRZQOZfsvBJlk0Yrhg",
-    authDomain: "real-estate-project-24ad8.firebaseapp.com",
-    projectId: "real-estate-project-24ad8",
-    storageBucket: "real-estate-project-24ad8.appspot.com",
-    messagingSenderId: "721597807443",
-    appId: "1:721597807443:web:3fbec0af1b3cf348da3fa6",
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-  const provider = new GoogleAuthProvider();
-
-  const signGoogle = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        // The signed-in user info.
-        const user = result.user;
-        console.log(user);
-        if (user) {
-          sendEmailVerification(auth.currentUser).then(() => {
-            console.log("Email verification sent");
-          });
-        } else {
-          console.log("user not found");
-        }
-      })
-      .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.customData.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        console.log(errorCode);
-        console.log(errorMessage);
-        console.log(email);
-        console.log(credential);
-      });
-  };
-  window.signGoogle = signGoogle;
-</script>
+<script type="module" src="signup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

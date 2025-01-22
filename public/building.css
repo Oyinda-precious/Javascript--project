@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Over+the+Rainbow&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  width: 100%;
+  position: sticky;
+  height: 120px;
+  z-index: 3;
+  top: 0;
+  background-color: white;
+}
+/* .header {
+  border-bottom: 1px solid rgba(192, 191, 191, 0.726);
+} */
+.mainn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.logodiv img {
+  height: 90px;
+  width: 90%;
+  padding: 10px 0px 10px 30px;
+}
+.prime-logoword {
+  padding: 10px 0px 10px 30px;
+  font-family: sans-serif;
+  margin: -10px 0px 0px 0px;
+}
+.smallword {
+  font-size: 18px;
+  font-weight: bold;
+}
+.briefword {
+  font-size: 10px;
+  font-weight: bolder;
+  opacity: 0.6;
+  margin-top: -10px;
+}
+#phone-iconn {
+  margin-left: 50rem;
+  /* margin-top: 5rem; */
+  font-size: 40px;
+  padding: 10px;
+  opacity: 0.5;
+}
+#call-days {
+  /* margin-top: 1rem; */
+  padding: 10px;
+}
+#numberssss {
+  color: blue;
+}
+
+#callussss {
+  opacity: 0.6;
+  margin: 5px;
+  font-family: monospace;
+}
+#favorite {
+  display: flex;
+  gap: 70px;
+  padding: 10px;
+}
+#favorite a {
+  text-decoration: none;
+  color: black;
+}
+#favorite a:hover {
+  color: blue;
+}
+#estateimage {
+  width: 35%;
+  height: 400px;
+  margin: 4rem;
+}
+
+#property-color {
+  background: linear-gradient(#03081f, #1e108c);
+  height: 40px;
+}
+#propertyyyyyssss {
+  color: whitesmoke;
+  margin-top: 3rem;
+  padding: 20px;
+  text-align: center;
+  font-style: oblique;
+}
+#the-details {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#eachname {
+  opacity: 0.5;
+  font-size: small;
+}
+#eachNameTwo {
+  font-weight: 600;
+  opacity: 0.7;
+}
+#image-details {
+  background-color: rgb(196, 212, 224);
+  width: 100%;
+  height: 900px;
+  /* margin-top: 5rem; */
+}
+#separate {
+  display: flex;
+  justify-content: space-between;
+}
+#form {
+  background-color: white;
+  width: 20%;
+  height: 500px;
+  margin: 4rem;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#information {
+  color: blue;
+  font-size: 20px;
+  font-weight: 600;
+}
+#enquiry-form {
+  margin-top: 20px;
+}
+#enquiry-form label {
+  font-size: 13px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#enquiry-form input,
+#enquiry-form textarea {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#enquiry-form textarea {
+  resize: vertical;
+}
+
+#submit-btn {
+  width: 50%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contactt {
+  background-color: whitesmoke;
+  width: 90%;
+  height: 50px;
+  padding: 15px;
+  margin-top: 3rem;
+  border-radius: 10px;
+}
+#contact-div,
+#phone-contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+#envelopee {
+  color: blue;
+}
+#phone-contact {
+  color: blue;
+  padding: 10px;
+}
+#whole-properties {
+  margin-top: -8rem;
+  margin-left: 5rem;
+}
+#attributes {
+  padding: 10px;
+  margin-left: 30px;
+  color: blue;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#property-detailsss {
+  display: flex;
+  gap: 150px;
+  padding: 10px;
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#sub-details {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* #confirmationMessage {
+  background: linear-gradient(#03081f, #1e108c);
+  color: white;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+} */
+
+/* @media screen and(max-width: 900px) {
+  nav {
+    display: none;
+  }
+  .prime-logoword {
+    display: none;
+  }
+} */

@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Over+the+Rainbow&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+main {
+  height: 100vh;
+}
+nav {
+  width: 100%;
+  position: sticky;
+  height: 190px;
+  z-index: 3;
+  top: 0;
+  background-color: white;
+  display: block;
+}
+.header {
+  border-bottom: 1px solid rgba(192, 191, 191, 0.726);
+}
+.mainn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logodiv img {
+  height: 70px;
+  width: auto;
+  padding: 10px 0px 10px 30px;
+}
+.prime-logoword {
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  /* margin: -10px 0px 0px 0px; */
+}
+.smallword {
+  font-size: 14px;
+  font-weight: bold;
+}
+.briefword {
+  font-size: 10px;
+  font-weight: bolder;
+  opacity: 0.6;
+  margin-top: -10px;
+}
+#phone-iconn {
+  margin-left: 50rem;
+
+  font-size: 40px;
+  padding: 10px;
+  opacity: 0.5;
+}
+#call-days {
+  /* margin-top: 1rem; */
+  padding: 10px;
+}
+#numberssss {
+  color: blue;
+}
+
+#callussss {
+  opacity: 0.6;
+  margin: 5px;
+  font-family: monospace;
+}
+#favorite {
+  display: flex;
+  gap: 70px;
+  padding: 10px;
+}
+#favorite a {
+  text-decoration: none;
+  color: black;
+}
+#favorite a:hover {
+  color: blue;
+}
+#bottom-nav {
+  display: flex;
+  padding: 10px;
+  margin-left: 25px;
+  gap: 50px;
+}
+#bottom-nav a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+#bottom-nav a:hover {
+  color: blue;
+}
+.secone {
+  background-color: rgb(196, 212, 224);
+  width: 100%;
+  height: fit-content;
+}
+.fliter-search {
+  text-align: center;
+  color: blue;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
+#searchDiv {
+  background-color: rgb(243, 243, 243);
+  width: 95%;
+  height: 100px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+
+#form-search {
+  padding: 20px;
+  /* margin-left: -5rem; */
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+form select {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+.container-input {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.number-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 30px;
+  margin-top: 10px;
+  /* padding: 10px; */
+}
+
+.number-input input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.number-input button {
+  width: 30px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.number-input button:hover {
+  background-color: #d4d4d4;
+}
+#propertyId {
+  margin-top: 8px;
+}
+#idInput {
+  padding: 8px;
+  width: 65%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  /* font-weight: 600; */
+  text-align: center;
+  color: black;
+}
+form button {
+  width: 10%;
+  height: 40px;
+  /* padding: 10px; */
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+.sectwo {
+  /* width: 100%; */
+  /* height: 100%; */
+  margin-left: 5rem;
+  /* margin-top: -10rem; */
+  /* padding: 30px; */
+}
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  row-gap: 100px;
+  margin-top: 30px;
+  height: 70%;
+}
+.box-div {
+  padding: 20px;
+  background-color: white;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  width: 300px;
+  height: 600px;
+}
+.box-div img {
+  width: 300px;
+  height: 300px;
+}
+#resident-details {
+  line-height: 35px;
+  margin-top: 30px;
+}
+.thetype {
+  opacity: 0.5;
+}
+#detailssss {
+  display: flex;
+  justify-content: space-between;
+}
+.residentialll {
+  color: blue;
+}
+.bedroom {
+  padding: 8px;
+}
+.bedroom a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.bedroom a:hover {
+  color: darkblue;
+}
+
+.price {
+  color: darkblue;
+  margin: 20px 0px 0px 0px;
+  font-size: 18px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#botoomDiv {
+  background-color: rgb(70, 68, 68);
+  width: 100%;
+  height: 70px;
+  color: white;
+  /* margin-top: -10rem; */
+}
+.logondtime {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-style: italic;
+}
+.botoomlogoname {
+  padding: 20px;
+  /* text-align: center; */
+}
+#dateTimeDisplay {
+  margin-top: 20px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: darkblue;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  nav,
+  .fliter-search {
+    display: none;
+  }
+  #form-search,
+  #searchDiv {
+    display: none;
+  }
+  .sectwo {
+    margin-left: 5rem;
+    padding: 0;
+  }
+  .properties {
+    gap: 10px;
+  }
+}

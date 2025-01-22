@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin</title>
-    <link rel="stylesheet" href="admin.css" />
+    <title>Agent Dashboard</title>
+    <link rel="stylesheet" href="agentdashboard.css" />
     <link rel="icon" href="trustee prime favicon.ico" type="favicon" />
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
@@ -17,10 +17,10 @@
     <nav id="navnav">
       <div id="navarrow">
         <div class="logo-name">Trustee Prime.</div>
-        <div id="agent-Name">Welcome</div>
+        <div id="agentName">Welcome</div>
         <div><i class="fa-solid fa-bars"></i></div>
         <div><i class="fa-solid fa-caret-down"></i></div>
-        <!-- <div id="signOut"><a href=""> SignOut</a></div> -->
+        <div id="signOut"><a href=""> SignOut</a></div>
       </div>
     </nav>
     <!-- Sidebar  -->
@@ -29,7 +29,7 @@
       <ul>
         <li id="dashboardMenu" class="active">Dashboard</li>
         <li id="addPropertyMenu">Add Property</li>
-        <!-- <li id="leadsMenu">Leads / Enquiries</li> -->
+        <li id="leadsMenu">Leads / Enquiries</li>
       </ul>
     </nav>
 
@@ -40,22 +40,23 @@
         <div class="stat-boxes">
           <div class="stat-box">
             <h3>Total Number of Your Properties</h3>
-            <p id="number-Properties">0</p>
-          </div>
-          <div class="stat-box">
-            <h3>Total Number of Agents Properties</h3>
             <p id="total-Properties">0</p>
           </div>
+          <!-- <div class="stat-box">
+            <h3>Total Number of Properties Available</h3>
+            <p id="pending-Inquiries">0</p>
+          </div> -->
         </div>
       </section>
 
       <section id="properties" class="section">
         <h2>Manage Properties</h2>
-
+        <!-- <button id="add-property-btn">Add New Property</button> -->
         <div id="property-list"></div>
       </section>
 
       <section id="inquiries" class="section">
+        <!-- <h2>Manage Inquiries</h2> -->
         <div id="inquiry-list"></div>
       </section>
     </div>
@@ -107,32 +108,15 @@
         <div id="uploaddd"><button id="uploadbtn">Upload</button></div>
       </div>
     </div>
-
-    <!-- <div>
-      <img id="image" src="" alt="" />
+    <!-- Leads Section -->
+    <div id="leads" class="content-section">
+      <h2>Leads and Enquiries</h2>
+      <p>
+        Here, you can manage all incoming leads and enquiries about your
+        properties.
+      </p>
     </div>
-
-    <input id="imgpicker" type="file" name="" id="" />
-    <input id="propertyname" placeholder="name of property" type="text" />
-    <input id="price" placeholder="price" type="text" />
-    <input id="propertytype" placeholder="property type" type="text" />
-    <input id="propertycategory" placeholder="property category" type="text" />
-    <div style="display: grid; grid-template-columns: 200px 300px" class="grid">
-      <div><span>Bedroom</span></div>
-      <div><input id="bedroomqty" placeholder="quantity" type="text" /></div>
-      <div><span>Bathroom</span></div>
-      <div><input id="bathroomqty" placeholder="quantity" type="text" /></div>
-      <div><span>Location</span></div>
-      <div><input id="location" placeholder="location" type="text" /></div>
-      <div><span>Parking Space</span></div>
-      <div>
-        <label for="yes">Yes</label>
-        <input type="radio" name="decision" id="yes" />
-        <label for="no">No</label>
-        <input type="radio" name="decision" id="no" />
-      </div>
-    </div>
-    <button id="uploadbtn">Upload</button> -->
   </body>
 </html>
-<script type="module" src="admin.js"></script>
+<script type="module" src="agentdashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
