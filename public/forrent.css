@@ -334,6 +334,7 @@ form button:hover {
   }
   .properties {
     gap: 10px;
+    margin: auto;
   }
   #botoomDiv {
     display: none;

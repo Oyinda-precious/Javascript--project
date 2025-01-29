@@ -333,10 +333,11 @@ form button:hover {
     display: none;
   }
   .sectwo {
-    margin-left: 5rem;
+    margin-left: 4rem;
     padding: 0;
   }
   .properties {
     gap: 10px;
+    margin: auto;
   }
 }

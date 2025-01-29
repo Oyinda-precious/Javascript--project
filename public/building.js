@@ -59,10 +59,8 @@ onValue(buildingRef, (snapshot) => {
       <div class="header">
         <div class="mainn">
           <div class="logodiv">
-            <img src="../trustee prime logo.jpg" alt="" />
-            <div class="prime-logoword">
-              <div class="briefword">Estate Surveyors & Valuers</div>
-            </div>
+            <img src="trustee prime logo.jpg" alt="" />
+            
           </div>
           <div>
             <div id="phone-iconn"><i class="fa-solid fa-phone-volume"></i></div>

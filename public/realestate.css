@@ -109,7 +109,7 @@ nav {
   display: block;
 }
 .sec1 {
-  background-image: url(../residential\ building.jpg);
+  background-image: url(residential\ building.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -180,7 +180,7 @@ nav {
   border: 1px solid white;
 }
 .sec2 {
-  background-image: url(../african-female-real-estate-agent-.jpg);
+  background-image: url(african-female-real-estate-agent-.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -356,7 +356,7 @@ nav {
   color: white;
 }
 .sec5 {
-  background-image: url(../african-female-real-estate-agent-.jpg);
+  background-image: url(african-female-real-estate-agent-.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -515,7 +515,7 @@ nav {
   width: 80px;
 }
 .sec7 {
-  background-image: url(../african-female-real-estate-agent-.jpg);
+  background-image: url(african-female-real-estate-agent-.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -636,17 +636,19 @@ li {
   }
   .properties {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
   .estatehistory {
-    font-size: 10px;
+    font-size: 8px;
+    line-height: 15px;
   }
   .rating {
     font-size: 10px;
     gap: 10px;
   }
   .ratenumber {
-    font-size: 20px;
+    font-size: 10px;
   }
   .footerdiv,
   .sec8 {
